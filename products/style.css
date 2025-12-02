@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #fff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #222;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+nav .logo{
+    color: #111;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 6px;
+}
+nav ul li a{
+    color: #111;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.2s, background 0.2s;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+nav ul li a:hover{
+    color: #fff;
+    background: #111;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+.product{
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #222;
+    border-radius: 8px;
+    width: 185px;
+    background: #fff;
+    transition: transform 0.2s;
+}
+.product:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.product img{
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #222;
+    background: #fff;
+}
+.product h3{
+    font-size: 19px;
+    margin: 10px 0;
+    color: #111;
+}
+.product .price{
+    font-size: 15px;
+    color: #111;
+    font-weight: bold;
+}
+.view-product{
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.2s;
+    margin-top: 5px;
+}
+.view-product:hover{
+    background: gray;
+}
+.sizes {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+}
+.sizes input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #111; 
+}
+.sizes label {
+    cursor: pointer;
+    font-weight: 500;
+    color: #111;
+}
+.quantity {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+}
+.quantity input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    background: #fff;
+}
